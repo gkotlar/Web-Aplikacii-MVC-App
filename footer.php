@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body >
-<footer class="bg-body-tertiary text-center text-lg-start" style="margin-top: 0; padding-bottom:-10px">
+<footer class="bg-body-tertiary text-center text-lg-start" style="position: absolute; bottom: 0; width: 100%">
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
     <?php echo '© '. date('Y') .' Copyright:';?>

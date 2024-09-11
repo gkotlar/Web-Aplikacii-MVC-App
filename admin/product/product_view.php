@@ -30,6 +30,7 @@
                         <ul class="list-group list-group-flush pb-2">
                             <li class="list-group-item"><strong>Title:</strong> <?php echo $product['productName'] ?></li>
                             <li class="list-group-item"><strong>Artist:</strong> <?php echo $product['artistName'] ?></li>
+                            <li class="list-group-item"><strong>Category:</strong> <?php echo $product['categoryName'] ?></li>
                             <li class="list-group-item"><strong>Price:</strong> <?php echo '$' . $product['listPrice'] ?></li>
                             <li class="list-group-item"><strong>Description:</strong> <?php echo $product['description'] ?></li>
                         </ul>
@@ -48,7 +49,6 @@
                         value="<?php echo $product['categoryID']; ?>" />
                     <input type="submit" value="Edit Product" class="btn btn-primary mb-1"/>
                 </form>
-                <?php if ($product_order_count == 0) : ?>
                 <form action="" method="post" id="delete_button_form" >
                     <input type="hidden" name="action" value="delete_product"/>
                     <input type="hidden" name="product_id"
@@ -57,7 +57,6 @@
                         value="<?php echo $product['categoryID']; ?>" />
                     <input type="submit" value="Delete Product" class="btn btn-danger mb-1"/>
                 </form>
-                <?php endif; ?>
             </div>
         </div>
     </div>

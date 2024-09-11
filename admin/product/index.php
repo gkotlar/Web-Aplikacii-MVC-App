@@ -86,7 +86,7 @@ switch ($action) {
         $description = $_POST['description'];
         $product_img = $_FILES['product_img']['name'];
         $product_img_tmp = $_FILES['product_img']['tmp_name'];
-        $folder = $doc_root . '/musicshop/products/';
+        $folder = $doc_root . '/Web-Aplikacii-MVC-App/products/';
                 
         // Validate the inputs
         if (empty($category_id) || empty($product_name) || empty($price) || empty($artist_name) || empty($product_img)) {
@@ -130,7 +130,7 @@ switch ($action) {
         $description = $_POST['description'];
         $product_img = $_FILES['product_img']['name'];
         $product_img_tmp = $_FILES['product_img']['tmp_name'];
-        $folder = $doc_root . '/musicshop/products/';
+        $folder = $doc_root . '/Web-Aplikacii-MVC-App/products/';
         $product = get_product($product_id);
                 
         // Validate the inputs

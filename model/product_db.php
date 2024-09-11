@@ -98,8 +98,8 @@ function update_product($product_id, $category_id, $artistName,
             artistName = :aName,
             productName = :pName,
             listPrice = :price,
-            imgURL = :imgurl
-            description = :desc
+            imgURL = :imgurl,
+            description = :product_desc
         WHERE productID = :product_id';
     try {
         $statement = $db->prepare($query);
@@ -109,7 +109,7 @@ function update_product($product_id, $category_id, $artistName,
         $statement->bindValue(':pName', $productName);
         $statement->bindValue(':price', $price);
         $statement->bindValue(':imgurl', $imgurl);
-        $statement->bindValue(':desc', $desc);
+        $statement->bindValue(':product_desc', $desc);
         $statement->bindValue(':product_id', $product_id);
         $statement->execute();
         $statement->closeCursor();

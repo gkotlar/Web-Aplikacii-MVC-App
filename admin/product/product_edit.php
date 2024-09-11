@@ -69,7 +69,7 @@
                 <br /> -->
                 <div class="input-group">
                     <span class="input-group-text">Description</span>
-                    <textarea name="description"class="form-control" aria-label="With textarea" rows="5" cols="30"><?php echo $product['description']; ?></textarea>
+                    <textarea name="description" class="form-control" aria-label="With textarea" rows="5" cols="30"><?php echo $product['description']; ?></textarea>
                 </div>
                 <div class="input-group mt-3">
                     <input type="file" class="form-control" name="product_img">
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <?php include '.../../footer.php'; ?>
+    <?php include '../../footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

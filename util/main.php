@@ -12,7 +12,7 @@ set_include_path($doc_root . $app_path);
 
 // Get common code
 require_once('tags.php');
-require_once($doc_root . '/musicshop/model/database.php');
+require_once($doc_root . '/Web-Aplikacii-MVC-App/model/database.php');
 
 // Define some common functions
 function display_db_error($error_message) {

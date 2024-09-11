@@ -27,7 +27,7 @@
             <button type="submit" class="btn btn-primary">Log In</button>
         </form>
         <a href=".?action=view_register" class="d-flex mb-1">Don't Have an Account? Register</a>
-        <a href="/musicshop/admin/" class="d-flex">Log In as an Admin</a>
+        <a href="/Web-Aplikacii-MVC-App/admin/" class="d-flex">Log In as an Admin</a>
     </div>
 
 

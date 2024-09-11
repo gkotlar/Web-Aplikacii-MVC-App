@@ -17,7 +17,7 @@
             <h5 class="text-center"><?php echo $product['productName']?></h5>
             <h6 class="text-center"><strong><?php echo $product['artistName']?></strong></h6>
     </div>
-    <div class="container-fluid" style="width: 70%">
+    <div class="container" style="width: 70%">
         <div class="row">
             <div class="col-md-8">
                 <img src="<?php echo '../products/' . $product['imgURL'] ?>" class="img-thumbnail" style="height: 90%"/>
@@ -26,11 +26,12 @@
                 <ul class="list-group list-group-flush pb-2">
                     <li class="list-group-item"><strong>Title:</strong> <?php echo $product['productName'] ?></li>
                     <li class="list-group-item"><strong>Artist:</strong> <?php echo $product['artistName'] ?></li>
+                    <li class="list-group-item"><strong>Category:</strong> <?php echo $product['categoryName'] ?></li>
                     <li class="list-group-item"><strong>Price:</strong> <?php echo '$' . $product['listPrice'] ?></li>
                     <li class="list-group-item"><strong>Description:</strong> <?php echo $product['description'] ?></li>
                 </ul>
                 <?php if(isset($_SESSION['user'])):?>
-                <form action="/musicshop/cart/" method="get" id="add_to_cart_form">
+                <form action="/Web-Aplikacii-MVC-App/cart/" method="get" id="add_to_cart_form">
                     <input type="hidden" name="action" value="add" />
                     <input type="hidden" name="product_id"
                         value="<?php echo $product['productID']; ?>" />
@@ -39,7 +40,7 @@
                 </form>
                 <?php endif; ?>
                 <?php if(isset($_SESSION['admin'])):?>
-                <form action="/musicshop/admin/product/" method="get">
+                <form action="/Web-Aplikacii-MVC-App/admin/product/" method="get">
                     <input type="hidden" name="action" value="view_product" />
                     <input type="hidden" name="product_id"
                         value="<?php echo $product['productID']; ?>" />

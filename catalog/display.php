@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <div class="container-fluid p-0">
+    <div class="container p-0">
         <?php include '../header.php'; ?>
         <div>
             <h3 class="text-center py-2"><?php echo $category_name?></h3>
@@ -27,7 +27,7 @@
                         <p class="card-text"><?php echo $product['artistName'] ?></p>
                         <p class="card-text"><?php echo '$'.$product['listPrice'] ?></p>
                         <a href="#" class="btn btn-primary">Add to Cart</a>
-                        <a href="<?php echo '/musicshop/details/?productId=' . $product['productID'] ?>" class="btn btn-secondary">Details</a>
+                        <a href="<?php echo '/Web-Aplikacii-MVC-App/details/?productId=' . $product['productID'] ?>" class="btn btn-secondary">Details</a>
                     </div>
                 </div>
             </div>
